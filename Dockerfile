@@ -5,7 +5,6 @@ ENV HOME /root
 
 RUN apt update && apt upgrade -y
 RUN apt install -y \
-    language-pack-ja \
     fonts-takao
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV TZ Asia/Tokyo
