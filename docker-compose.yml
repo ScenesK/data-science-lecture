@@ -12,11 +12,11 @@ services:
         SQLITE_FILE: $SQLITE_FILE
         SQLITE_URL: $SQLITE_URL
     image: $DOCKER_HUB_ID/$IMAGE_NAME:$IMAGE_VERSION
-    command: bash /root/workspace/up.sh
+    command: bash /root/workspace/up.sh $JUPYTER_PORT
     logging:
       driver: 'json-file'
     ports:
-      - '$JUPYTER_PORT:8888'
-      - '$TENSOR_BOARD_PORT:6006'
+      - '$JUPYTER_PORT:$JUPYTER_PORT'
+      - '$TENSOR_BOARD_PORT:$TENSOR_BOARD_PORT'
     volumes:
       - ./workspace:/root/workspace
