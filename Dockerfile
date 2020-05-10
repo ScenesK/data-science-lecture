@@ -69,6 +69,8 @@ RUN apt install -y graphviz && \
     pip install \
     pydot==1.4.1 \
     pydotplus==2.0.2
+RUN apt install -y libgraphviz-dev && \
+    pip install pygraphviz==1.5
 RUN apt install -y cmake && \
     pip install lightgbm==2.2.3
 
