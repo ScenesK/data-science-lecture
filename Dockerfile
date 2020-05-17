@@ -56,7 +56,7 @@ RUN pip install --upgrade pip && \
     numpy==1.17.0 \
     scipy==1.3.0 \
     statsmodels==0.10.1 \
-    scikit-learn==0.22.1 \
+    scikit-learn==0.23.0 \
     opencv-python==4.1.0.25 \
     tensorflow==1.14.0 \
     pandas==0.25.0 \
