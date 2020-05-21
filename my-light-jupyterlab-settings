@@ -1,0 +1,225 @@
+{
+    "rules": [
+        {
+            "selector": ".CodeMirror pre, .output pre",
+            "styles": [
+                "font-family: osaka-mono, TakaoGothic monospace, monospace"
+            ]
+        },
+        {
+            "selector": "img",
+            "styles": [
+                "background-color: white"
+            ]
+        },
+        {
+            "selector": "div.widget-readout",
+            "styles": [
+                "color: black"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border tr, .jp-RenderedHTMLCommon .border th, .jp-RenderedHTMLCommon .border td, .jp-RenderedHTMLCommon tr.border, .jp-RenderedHTMLCommon th.border, .jp-RenderedHTMLCommon td.border",
+            "styles": [
+                "border: 1px solid",
+                "border-color: black"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border th, .jp-RenderedHTMLCommon th.border",
+            "styles": [
+                "border-bottom: 2px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-top tr, .jp-RenderedHTMLCommon .border-top th, .jp-RenderedHTMLCommon .border-top td, .jp-RenderedHTMLCommon tr.border-top, .jp-RenderedHTMLCommon th.border-top, .jp-RenderedHTMLCommon td.border-top",
+            "styles": [
+                "border-top: 1px solid"
+            ]
+        },
+        {
+            "selector": ".rendered_thml .border-bottom tr, .jp-RenderedHTMLCommon .border-bottom th, .jp-RenderedHTMLCommon .border-bottom td, .jp-RenderedHTMLCommon tr.border-bottom, .jp-RenderedHTMLCommon th.border-bottom, .jp-RenderedHTMLCommon td.border-bottom",
+            "styles": [
+                "border-bottom: 1px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-left tr, .jp-RenderedHTMLCommon .border-left th, .jp-RenderedHTMLCommon .border-left td, .jp-RenderedHTMLCommon tr.border-left, .jp-RenderedHTMLCommon th.border-left, .jp-RenderedHTMLCommon td.border-left",
+            "styles": [
+                "border-left: 1px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-right tr, .jp-RenderedHTMLCommon .border-right th, .jp-RenderedHTMLCommon .border-right td, .jp-RenderedHTMLCommon tr.border-right, .jp-RenderedHTMLCommon th.border-right, .jp-RenderedHTMLCommon td.border-right",
+            "styles": [
+                "border-right: 1px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-top-bold tr, .jp-RenderedHTMLCommon .border-top-bold th, .jp-RenderedHTMLCommon .border-top-bold td, .jp-RenderedHTMLCommon tr.border-top-bold, .jp-RenderedHTMLCommon th.border-top-bold, .jp-RenderedHTMLCommon td.border-top-bold",
+            "styles": [
+                "border-top: 2px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-bottom-bold tr, .jp-RenderedHTMLCommon .border-bottom-bold th, .jp-RenderedHTMLCommon .border-bottom-bold td, .jp-RenderedHTMLCommon tr.border-bottom-bold, .jp-RenderedHTMLCommon th.border-bottom-bold, .jp-RenderedHTMLCommon td.border-bottom-bold",
+            "styles": [
+                "border-bottom: 2px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-left-bold tr, .jp-RenderedHTMLCommon .border-left-bold th, .jp-RenderedHTMLCommon .border-left-bold td, .jp-RenderedHTMLCommon tr.border-left-bold, .jp-RenderedHTMLCommon th.border-left-bold, .jp-RenderedHTMLCommon td.border-left-bold",
+            "styles": [
+                "border-left: 2px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-right-bold tr, .jp-RenderedHTMLCommon .border-right-bold th, .jp-RenderedHTMLCommon .border-right-bold td, .jp-RenderedHTMLCommon tr.border-right-bold, .jp-RenderedHTMLCommon th.border-right-bold, .jp-RenderedHTMLCommon td.border-right-bold",
+            "styles": [
+                "border-right: 2px solid"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-top-double tr, .jp-RenderedHTMLCommon .border-top-double th, .jp-RenderedHTMLCommon .border-top-double td, .jp-RenderedHTMLCommon tr.border-top-double, .jp-RenderedHTMLCommon th.border-top-double, .jp-RenderedHTMLCommon td.border-top-double",
+            "styles": [
+                "border-top: 3px double"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-bottom-double tr, .jp-RenderedHTMLCommon .border-bottom-double th, .jp-RenderedHTMLCommon .border-bottom-double td, .jp-RenderedHTMLCommon tr.border-bottom-double, .jp-RenderedHTMLCommon th.border-bottom-double, .jp-RenderedHTMLCommon td.border-bottom-double",
+            "styles": [
+                "border-bottom: 3px double"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-left-double tr, .jp-RenderedHTMLCommon .border-left-double th, .jp-RenderedHTMLCommon .border-left-double td, .jp-RenderedHTMLCommon tr.border-left-double, .jp-RenderedHTMLCommon th.border-left-double, .jp-RenderedHTMLCommon td.border-left-double",
+            "styles": [
+                "border-left: 3px double"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-right-double tr, .jp-RenderedHTMLCommon .border-right-double th, .jp-RenderedHTMLCommon .border-right-double td, .jp-RenderedHTMLCommon tr.border-right-double, .jp-RenderedHTMLCommon th.border-right-double, .jp-RenderedHTMLCommon td.border-right-double",
+            "styles": [
+                "border-right: 3px double"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-none tr, .jp-RenderedHTMLCommon .border-none th, .jp-RenderedHTMLCommon .border-none td, .jp-RenderedHTMLCommon tr.border-none, .jp-RenderedHTMLCommon th.border-none, .jp-RenderedHTMLCommon td.border-none",
+            "styles": [
+                "border: none"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-top-none tr, .jp-RenderedHTMLCommon .border-top-none th, .jp-RenderedHTMLCommon .border-top-none td, .jp-RenderedHTMLCommon tr.border-top-none, .jp-RenderedHTMLCommon th.border-top-none, .jp-RenderedHTMLCommon td.border-top-none",
+            "styles": [
+                "border-top: none"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-bottom-none tr, .jp-RenderedHTMLCommon .border-bottom-none th, .jp-RenderedHTMLCommon .border-bottom-none td, .jp-RenderedHTMLCommon tr.border-bottom-none, .jp-RenderedHTMLCommon th.border-bottom-none, .jp-RenderedHTMLCommon td.border-bottom-none",
+            "styles": [
+                "border-bottom: none"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-left-none tr, .jp-RenderedHTMLCommon .border-left-none th, .jp-RenderedHTMLCommon .border-left-none td, .jp-RenderedHTMLCommon tr.border-left-none, .jp-RenderedHTMLCommon th.border-left-none, .jp-RenderedHTMLCommon td.border-left-none",
+            "styles": [
+                "border-left: none"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .border-right-none tr, .jp-RenderedHTMLCommon .border-right-none th, .jp-RenderedHTMLCommon .border-right-none td, .jp-RenderedHTMLCommon tr.border-right-none, .jp-RenderedHTMLCommon th.border-right-none, .jp-RenderedHTMLCommon td.border-right-none",
+            "styles": [
+                "border-right: none"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-black tr, .jp-RenderedHTMLCommon .text-black th, .jp-RenderedHTMLCommon .text-black td, .jp-RenderedHTMLCommon tr.text-black, .jp-RenderedHTMLCommon th.text-black, .jp-RenderedHTMLCommon td.text-black",
+            "styles": [
+                "color: black",
+                "border-color: black"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-white tr, .jp-RenderedHTMLCommon .text-white th, .jp-RenderedHTMLCommon .text-white td, .jp-RenderedHTMLCommon tr.text-white, .jp-RenderedHTMLCommon th.text-white, .jp-RenderedHTMLCommon td.text-white",
+            "styles": [
+                "color: white",
+                "border-color: black"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-red tr, .jp-RenderedHTMLCommon .text-red th, .jp-RenderedHTMLCommon .text-red td, .jp-RenderedHTMLCommon tr.text-red, .jp-RenderedHTMLCommon th.text-red, .jp-RenderedHTMLCommon td.text-red",
+            "styles": [
+                "color: crimson",
+                "border-color: black"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-blue tr, .jp-RenderedHTMLCommon .text-blue th, .jp-RenderedHTMLCommon .text-blue td, .jp-RenderedHTMLCommon tr.text-blue, .jp-RenderedHTMLCommon th.text-blue, .jp-RenderedHTMLCommon td.text-blue",
+            "styles": [
+                "color: royalblue",
+                "border-color: black"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-shadow span, .jp-RenderedHTMLCommon span.text-shadow",
+            "styles": [
+                "text-shadow: 0px 0px 1px lightgrey"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .background-default tr, .jp-RenderedHTMLCommon .background-default th, .jp-RenderedHTMLCommon .background-default td, .jp-RenderedHTMLCommon tr.background-default, .jp-RenderedHTMLCommon th.background-default, .jp-RenderedHTMLCommon td.background-default",
+            "styles": [
+                "background-color: white"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .background-bright tr, .jp-RenderedHTMLCommon .background-bright th, .jp-RenderedHTMLCommon .background-bright td, .jp-RenderedHTMLCommon tr.background-bright, .jp-RenderedHTMLCommon th.background-bright, .jp-RenderedHTMLCommon td.background-bright",
+            "styles": [
+                "background-color: white"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .background-dark tr, .jp-RenderedHTMLCommon .background-dark th, .jp-RenderedHTMLCommon .background-dark td, .jp-RenderedHTMLCommon tr.background-dark, .jp-RenderedHTMLCommon th.background-dark, .jp-RenderedHTMLCommon td.background-dark",
+            "styles": [
+                "background-color: #CCCCCC"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .background-white tr, .jp-RenderedHTMLCommon .background-white th, .jp-RenderedHTMLCommon .background-white td, .jp-RenderedHTMLCommon tr.background-white, .jp-RenderedHTMLCommon th.background-white, .jp-RenderedHTMLCommon td.background-white",
+            "styles": [
+                "background-color: white"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .background-blue tr, .jp-RenderedHTMLCommon .background-blue th, .jp-RenderedHTMLCommon .background-blue td, .jp-RenderedHTMLCommon tr.background-blue, .jp-RenderedHTMLCommon th.background-blue, .jp-RenderedHTMLCommon td.background-blue",
+            "styles": [
+                "background-color: royalblue"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .background-lightblue tr, .jp-RenderedHTMLCommon .background-lightblue th, .jp-RenderedHTMLCommon .background-lightblue td, .jp-RenderedHTMLCommon tr.background-lightblue, .jp-RenderedHTMLCommon th.background-lightblue, .jp-RenderedHTMLCommon td.background-lightblue",
+            "styles": [
+                "background-color: dodgerblue"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-center tr, .jp-RenderedHTMLCommon .text-center th, .jp-RenderedHTMLCommon .text-center td, .jp-RenderedHTMLCommon tr.text-center, .jp-RenderedHTMLCommon th.text-center, .jp-RenderedHTMLCommon td.text-center",
+            "styles": [
+                "text-align: center"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-left tr, .jp-RenderedHTMLCommon .text-left th, .jp-RenderedHTMLCommon .text-left td, .jp-RenderedHTMLCommon tr.text-left, .jp-RenderedHTMLCommon th.text-left, .jp-RenderedHTMLCommon td.text-left",
+            "styles": [
+                "text-align: left"
+            ]
+        },
+        {
+            "selector": ".jp-RenderedHTMLCommon .text-right tr, .jp-RenderedHTMLCommon .text-right th, .jp-RenderedHTMLCommon .text-right td, .jp-RenderedHTMLCommon tr.text-right, .jp-RenderedHTMLCommon th.text-right, .jp-RenderedHTMLCommon td.text-right",
+            "styles": [
+                "text-align: right"
+            ]
+        }
+    ]
+}

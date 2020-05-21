@@ -1,5 +1,6 @@
 .vscode
 /*.log
+workspace/*.log
 .ipynb_checkpoints/
 __pycache__/
 intermediate-dev/

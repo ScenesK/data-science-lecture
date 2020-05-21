@@ -1,278 +1,278 @@
 .CodeMirror pre, .output pre {
-    font-family: osaka-mono, TakaoGothic monospace, monospace;
-  }
+  font-family: osaka-mono, TakaoGothic monospace, monospace;
+}
 
-  img {
+img {
+  background-color: white;
+}
+
+div.widget-readout {
+  color: black;
+}
+
+.rendered_html .border tr,
+.rendered_html .border th,
+.rendered_html .border td,
+.rendered_html tr.border,
+.rendered_html th.border,
+.rendered_html td.border {
+  border: 1px solid;
+  border-color: black;
+}
+.rendered_html .border th,
+.rendered_html th.border {
+  border-bottom: 2px solid;
+}
+.rendered_html .border-top tr,
+.rendered_html .border-top th,
+.rendered_html .border-top td,
+.rendered_html tr.border-top,
+.rendered_html th.border-top,
+.rendered_html td.border-top {
+  border-top: 1px solid;
+}
+.rendered_thml .border-bottom tr,
+.rendered_html .border-bottom th,
+.rendered_html .border-bottom td,
+.rendered_html tr.border-bottom,
+.rendered_html th.border-bottom,
+.rendered_html td.border-bottom {
+  border-bottom: 1px solid;
+}
+.rendered_html .border-left tr,
+.rendered_html .border-left th,
+.rendered_html .border-left td,
+.rendered_html tr.border-left,
+.rendered_html th.border-left,
+.rendered_html td.border-left {
+  border-left: 1px solid;
+}
+.rendered_html .border-right tr,
+.rendered_html .border-right th,
+.rendered_html .border-right td,
+.rendered_html tr.border-right,
+.rendered_html th.border-right,
+.rendered_html td.border-right {
+  border-right: 1px solid;
+}
+.rendered_html .border-top-bold tr,
+.rendered_html .border-top-bold th,
+.rendered_html .border-top-bold td,
+.rendered_html tr.border-top-bold,
+.rendered_html th.border-top-bold,
+.rendered_html td.border-top-bold {
+  border-top: 2px solid;
+}
+.rendered_html .border-bottom-bold tr,
+.rendered_html .border-bottom-bold th,
+.rendered_html .border-bottom-bold td,
+.rendered_html tr.border-bottom-bold,
+.rendered_html th.border-bottom-bold,
+.rendered_html td.border-bottom-bold {
+  border-bottom: 2px solid;
+}
+.rendered_html .border-left-bold tr,
+.rendered_html .border-left-bold th,
+.rendered_html .border-left-bold td,
+.rendered_html tr.border-left-bold,
+.rendered_html th.border-left-bold,
+.rendered_html td.border-left-bold {
+  border-left: 2px solid;
+}
+.rendered_html .border-right-bold tr,
+.rendered_html .border-right-bold th,
+.rendered_html .border-right-bold td,
+.rendered_html tr.border-right-bold,
+.rendered_html th.border-right-bold,
+.rendered_html td.border-right-bold {
+  border-right: 2px solid;
+}
+.rendered_html .border-top-double tr,
+.rendered_html .border-top-double th,
+.rendered_html .border-top-double td,
+.rendered_html tr.border-top-double,
+.rendered_html th.border-top-double,
+.rendered_html td.border-top-double {
+  border-top: 3px double;
+}
+.rendered_html .border-bottom-double tr,
+.rendered_html .border-bottom-double th,
+.rendered_html .border-bottom-double td,
+.rendered_html tr.border-bottom-double,
+.rendered_html th.border-bottom-double,
+.rendered_html td.border-bottom-double {
+  border-bottom: 3px double;
+}
+.rendered_html .border-left-double tr,
+.rendered_html .border-left-double th,
+.rendered_html .border-left-double td,
+.rendered_html tr.border-left-double,
+.rendered_html th.border-left-double,
+.rendered_html td.border-left-double {
+  border-left: 3px double;
+}
+.rendered_html .border-right-double tr,
+.rendered_html .border-right-double th,
+.rendered_html .border-right-double td,
+.rendered_html tr.border-right-double,
+.rendered_html th.border-right-double,
+.rendered_html td.border-right-double {
+  border-right: 3px double;
+}
+.rendered_html .border-none tr,
+.rendered_html .border-none th,
+.rendered_html .border-none td,
+.rendered_html tr.border-none,
+.rendered_html th.border-none,
+.rendered_html td.border-none {
+  border: none;
+}
+.rendered_html .border-top-none tr,
+.rendered_html .border-top-none th,
+.rendered_html .border-top-none td,
+.rendered_html tr.border-top-none,
+.rendered_html th.border-top-none,
+.rendered_html td.border-top-none {
+  border-top: none;
+}
+.rendered_html .border-bottom-none tr,
+.rendered_html .border-bottom-none th,
+.rendered_html .border-bottom-none td,
+.rendered_html tr.border-bottom-none,
+.rendered_html th.border-bottom-none,
+.rendered_html td.border-bottom-none {
+  border-bottom: none;
+}
+.rendered_html .border-left-none tr,
+.rendered_html .border-left-none th,
+.rendered_html .border-left-none td,
+.rendered_html tr.border-left-none,
+.rendered_html th.border-left-none,
+.rendered_html td.border-left-none {
+  border-left: none;
+}
+.rendered_html .border-right-none tr,
+.rendered_html .border-right-none th,
+.rendered_html .border-right-none td,
+.rendered_html tr.border-right-none,
+.rendered_html th.border-right-none,
+.rendered_html td.border-right-none {
+  border-right: none;
+}
+
+.rendered_html .text-black tr,
+.rendered_html .text-black th,
+.rendered_html .text-black td,
+.rendered_html tr.text-black,
+.rendered_html th.text-black,
+.rendered_html td.text-black {
+  color: black;
+  border-color: black;
+}
+.rendered_html .text-white tr,
+.rendered_html .text-white th,
+.rendered_html .text-white td,
+.rendered_html tr.text-white,
+.rendered_html th.text-white,
+.rendered_html td.text-white {
+  color: white;
+  border-color: black;
+}
+.rendered_html .text-red tr,
+.rendered_html .text-red th,
+.rendered_html .text-red td,
+.rendered_html tr.text-red,
+.rendered_html th.text-red,
+.rendered_html td.text-red {
+  color: crimson;
+  border-color: black;
+}
+.rendered_html .text-blue tr,
+.rendered_html .text-blue th,
+.rendered_html .text-blue td,
+.rendered_html tr.text-blue,
+.rendered_html th.text-blue,
+.rendered_html td.text-blue {
+  color: royalblue;
+  border-color: black;
+}
+.rendered_html .text-shadow span,
+.rendered_html span.text-shadow {
+  text-shadow: 0px 0px 1px lightgrey;
+}
+
+.rendered_html .background-default tr,
+.rendered_html .background-default th,
+.rendered_html .background-default td,
+.rendered_html tr.background-default,
+.rendered_html th.background-default,
+.rendered_html td.background-default {
     background-color: white;
-  }
+}
+.rendered_html .background-bright tr,
+.rendered_html .background-bright th,
+.rendered_html .background-bright td,
+.rendered_html tr.background-bright,
+.rendered_html th.background-bright,
+.rendered_html td.background-bright {
+  background-color: white;
+}
+.rendered_html .background-dark tr,
+.rendered_html .background-dark th,
+.rendered_html .background-dark td,
+.rendered_html tr.background-dark,
+.rendered_html th.background-dark,
+.rendered_html td.background-dark {
+  background-color: #CCCCCC
+}
+.rendered_html .background-white tr,
+.rendered_html .background-white th,
+.rendered_html .background-white td,
+.rendered_html tr.background-white,
+.rendered_html th.background-white,
+.rendered_html td.background-white {
+  background-color: white;
+}
 
-  div.widget-readout {
-    color: black;
-  }
+.rendered_html .background-blue tr,
+.rendered_html .background-blue th,
+.rendered_html .background-blue td,
+.rendered_html tr.background-blue,
+.rendered_html th.background-blue,
+.rendered_html td.background-blue {
+  background-color: royalblue;
+}
 
-  .rendered_html .border tr,
-  .rendered_html .border th,
-  .rendered_html .border td,
-  .rendered_html tr.border,
-  .rendered_html th.border,
-  .rendered_html td.border {
-    border: 1px solid;
-    border-color: black;
-  }
-  .rendered_html .border th,
-  .rendered_html th.border {
-    border-bottom: 2px solid;
-  }
-  .rendered_html .border-top tr,
-  .rendered_html .border-top th,
-  .rendered_html .border-top td,
-  .rendered_html tr.border-top,
-  .rendered_html th.border-top,
-  .rendered_html td.border-top {
-    border-top: 1px solid;
-  }
-  .rendered_thml .border-bottom tr,
-  .rendered_html .border-bottom th,
-  .rendered_html .border-bottom td,
-  .rendered_html tr.border-bottom,
-  .rendered_html th.border-bottom,
-  .rendered_html td.border-bottom {
-    border-bottom: 1px solid;
-  }
-  .rendered_html .border-left tr,
-  .rendered_html .border-left th,
-  .rendered_html .border-left td,
-  .rendered_html tr.border-left,
-  .rendered_html th.border-left,
-  .rendered_html td.border-left {
-    border-left: 1px solid;
-  }
-  .rendered_html .border-right tr,
-  .rendered_html .border-right th,
-  .rendered_html .border-right td,
-  .rendered_html tr.border-right,
-  .rendered_html th.border-right,
-  .rendered_html td.border-right {
-    border-right: 1px solid;
-  }
-  .rendered_html .border-top-bold tr,
-  .rendered_html .border-top-bold th,
-  .rendered_html .border-top-bold td,
-  .rendered_html tr.border-top-bold,
-  .rendered_html th.border-top-bold,
-  .rendered_html td.border-top-bold {
-    border-top: 2px solid;
-  }
-  .rendered_html .border-bottom-bold tr,
-  .rendered_html .border-bottom-bold th,
-  .rendered_html .border-bottom-bold td,
-  .rendered_html tr.border-bottom-bold,
-  .rendered_html th.border-bottom-bold,
-  .rendered_html td.border-bottom-bold {
-    border-bottom: 2px solid;
-  }
-  .rendered_html .border-left-bold tr,
-  .rendered_html .border-left-bold th,
-  .rendered_html .border-left-bold td,
-  .rendered_html tr.border-left-bold,
-  .rendered_html th.border-left-bold,
-  .rendered_html td.border-left-bold {
-    border-left: 2px solid;
-  }
-  .rendered_html .border-right-bold tr,
-  .rendered_html .border-right-bold th,
-  .rendered_html .border-right-bold td,
-  .rendered_html tr.border-right-bold,
-  .rendered_html th.border-right-bold,
-  .rendered_html td.border-right-bold {
-    border-right: 2px solid;
-  }
-  .rendered_html .border-top-double tr,
-  .rendered_html .border-top-double th,
-  .rendered_html .border-top-double td,
-  .rendered_html tr.border-top-double,
-  .rendered_html th.border-top-double,
-  .rendered_html td.border-top-double {
-    border-top: 3px double;
-  }
-  .rendered_html .border-bottom-double tr,
-  .rendered_html .border-bottom-double th,
-  .rendered_html .border-bottom-double td,
-  .rendered_html tr.border-bottom-double,
-  .rendered_html th.border-bottom-double,
-  .rendered_html td.border-bottom-double {
-    border-bottom: 3px double;
-  }
-  .rendered_html .border-left-double tr,
-  .rendered_html .border-left-double th,
-  .rendered_html .border-left-double td,
-  .rendered_html tr.border-left-double,
-  .rendered_html th.border-left-double,
-  .rendered_html td.border-left-double {
-    border-left: 3px double;
-  }
-  .rendered_html .border-right-double tr,
-  .rendered_html .border-right-double th,
-  .rendered_html .border-right-double td,
-  .rendered_html tr.border-right-double,
-  .rendered_html th.border-right-double,
-  .rendered_html td.border-right-double {
-    border-right: 3px double;
-  }
-  .rendered_html .border-none tr,
-  .rendered_html .border-none th,
-  .rendered_html .border-none td,
-  .rendered_html tr.border-none,
-  .rendered_html th.border-none,
-  .rendered_html td.border-none {
-    border: none;
-  }
-  .rendered_html .border-top-none tr,
-  .rendered_html .border-top-none th,
-  .rendered_html .border-top-none td,
-  .rendered_html tr.border-top-none,
-  .rendered_html th.border-top-none,
-  .rendered_html td.border-top-none {
-    border-top: none;
-  }
-  .rendered_html .border-bottom-none tr,
-  .rendered_html .border-bottom-none th,
-  .rendered_html .border-bottom-none td,
-  .rendered_html tr.border-bottom-none,
-  .rendered_html th.border-bottom-none,
-  .rendered_html td.border-bottom-none {
-    border-bottom: none;
-  }
-  .rendered_html .border-left-none tr,
-  .rendered_html .border-left-none th,
-  .rendered_html .border-left-none td,
-  .rendered_html tr.border-left-none,
-  .rendered_html th.border-left-none,
-  .rendered_html td.border-left-none {
-    border-left: none;
-  }
-  .rendered_html .border-right-none tr,
-  .rendered_html .border-right-none th,
-  .rendered_html .border-right-none td,
-  .rendered_html tr.border-right-none,
-  .rendered_html th.border-right-none,
-  .rendered_html td.border-right-none {
-    border-right: none;
-  }
+.rendered_html .background-lightblue tr,
+.rendered_html .background-lightblue th,
+.rendered_html .background-lightblue td,
+.rendered_html tr.background-lightblue,
+.rendered_html th.background-lightblue,
+.rendered_html td.background-lightblue {
+  background-color: dodgerblue;
+}
 
-  .rendered_html .text-black tr,
-  .rendered_html .text-black th,
-  .rendered_html .text-black td,
-  .rendered_html tr.text-black,
-  .rendered_html th.text-black,
-  .rendered_html td.text-black {
-    color: black;
-    border-color: black;
-  }
-  .rendered_html .text-white tr,
-  .rendered_html .text-white th,
-  .rendered_html .text-white td,
-  .rendered_html tr.text-white,
-  .rendered_html th.text-white,
-  .rendered_html td.text-white {
-    color: white;
-    border-color: black;
-  }
-  .rendered_html .text-red tr,
-  .rendered_html .text-red th,
-  .rendered_html .text-red td,
-  .rendered_html tr.text-red,
-  .rendered_html th.text-red,
-  .rendered_html td.text-red {
-    color: crimson;
-    border-color: black;
-  }
-  .rendered_html .text-blue tr,
-  .rendered_html .text-blue th,
-  .rendered_html .text-blue td,
-  .rendered_html tr.text-blue,
-  .rendered_html th.text-blue,
-  .rendered_html td.text-blue {
-    color: royalblue;
-    border-color: black;
-  }
-  .rendered_html .text-shadow span,
-  .rendered_html span.text-shadow {
-    text-shadow: 0px 0px 1px lightgrey;
-  }
-
-  .rendered_html .background-default tr,
-  .rendered_html .background-default th,
-  .rendered_html .background-default td,
-  .rendered_html tr.background-default,
-  .rendered_html th.background-default,
-  .rendered_html td.background-default {
-      background-color: white;
-  }
-  .rendered_html .background-bright tr,
-  .rendered_html .background-bright th,
-  .rendered_html .background-bright td,
-  .rendered_html tr.background-bright,
-  .rendered_html th.background-bright,
-  .rendered_html td.background-bright {
-    background-color: white;
-  }
-  .rendered_html .background-dark tr,
-  .rendered_html .background-dark th,
-  .rendered_html .background-dark td,
-  .rendered_html tr.background-dark,
-  .rendered_html th.background-dark,
-  .rendered_html td.background-dark {
-    background-color: #CCCCCC
-  }
-  .rendered_html .background-white tr,
-  .rendered_html .background-white th,
-  .rendered_html .background-white td,
-  .rendered_html tr.background-white,
-  .rendered_html th.background-white,
-  .rendered_html td.background-white {
-    background-color: white;
-  }
-
-  .rendered_html .background-blue tr,
-  .rendered_html .background-blue th,
-  .rendered_html .background-blue td,
-  .rendered_html tr.background-blue,
-  .rendered_html th.background-blue,
-  .rendered_html td.background-blue {
-    background-color: royalblue;
-  }
-
-  .rendered_html .background-lightblue tr,
-  .rendered_html .background-lightblue th,
-  .rendered_html .background-lightblue td,
-  .rendered_html tr.background-lightblue,
-  .rendered_html th.background-lightblue,
-  .rendered_html td.background-lightblue {
-    background-color: dodgerblue;
-  }
-
-  .rendered_html .text-center tr,
-  .rendered_html .text-center th,
-  .rendered_html .text-center td,
-  .rendered_html tr.text-center,
-  .rendered_html th.text-center,
-  .rendered_html td.text-center {
-    text-align: center;
-  }
-  .rendered_html .text-left tr,
-  .rendered_html .text-left th,
-  .rendered_html .text-left td,
-  .rendered_html tr.text-left,
-  .rendered_html th.text-left,
-  .rendered_html td.text-left {
-    text-align: left;
-  }
-  .rendered_html .text-right tr,
-  .rendered_html .text-right th,
-  .rendered_html .text-right td,
-  .rendered_html tr.text-right,
-  .rendered_html th.text-right,
-  .rendered_html td.text-right {
-    text-align: right;
-  }
+.rendered_html .text-center tr,
+.rendered_html .text-center th,
+.rendered_html .text-center td,
+.rendered_html tr.text-center,
+.rendered_html th.text-center,
+.rendered_html td.text-center {
+  text-align: center;
+}
+.rendered_html .text-left tr,
+.rendered_html .text-left th,
+.rendered_html .text-left td,
+.rendered_html tr.text-left,
+.rendered_html th.text-left,
+.rendered_html td.text-left {
+  text-align: left;
+}
+.rendered_html .text-right tr,
+.rendered_html .text-right th,
+.rendered_html .text-right td,
+.rendered_html tr.text-right,
+.rendered_html th.text-right,
+.rendered_html td.text-right {
+  text-align: right;
+}

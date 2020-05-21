@@ -9,14 +9,17 @@ services:
       context: .
       args:
         PYTHON_VERSION: $PYTHON_VERSION
+        PYTHON_VERSION_SHORT: $PYTHON_VERSION_SHORT
         SQLITE_FILE: $SQLITE_FILE
         SQLITE_URL: $SQLITE_URL
     image: $DOCKER_HUB_ID/$IMAGE_NAME:$IMAGE_VERSION
-    command: bash /root/workspace/up.sh $JUPYTER_PORT
+    command: bash /root/workspace/up.sh $NOTEBOOK_PORT $LAB_PORT $NTERACT_PORT
     logging:
       driver: 'json-file'
     ports:
-      - '$JUPYTER_PORT:$JUPYTER_PORT'
+      - '$NOTEBOOK_PORT:$NOTEBOOK_PORT'
+      - '$LAB_PORT:$LAB_PORT'
+      - '$NTERACT_PORT:$NTERACT_PORT'
       - '$TENSOR_BOARD_PORT:$TENSOR_BOARD_PORT'
     volumes:
       - ./workspace:/root/workspace
