@@ -69,7 +69,10 @@ RUN pip install --upgrade \
     networkx==2.4 \
     sqlalchemy==1.3.17 \
     imbalanced-learn==0.6.2 \
-    pmdarima==1.6.0
+    pmdarima==1.6.0 \
+    overpy==0.4 \
+    OSMPythonTools==0.2.8 \
+    pyproj==2.6.1.post1
 RUN apt install -y graphviz && \
     pip install \
     pydot==1.4.1 \
