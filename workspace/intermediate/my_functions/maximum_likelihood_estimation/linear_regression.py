@@ -30,7 +30,7 @@ def show():
                                     x_tmp,
                                     x_tmp + norm.pdf(e[i]),
                                     color='r')
-        if i is 0:
+        if i == 0:
             lines[0].set(label=r'$\epsilon _{i}$')
             line_collection.set(label=r'$P(y_{i}\ |\ X_{i})$')
     ax.legend()
