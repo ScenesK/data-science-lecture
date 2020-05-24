@@ -7,11 +7,11 @@ from matplotlib.figure import figaspect
 resolution = 100
 
 
-def plot(kernel, C, gamma, x, y):
+def plot(kernel, C, gamma, fig, x, y):
     model = SVC(kernel=kernel, C=C, gamma=gamma, random_state=1234)
     model.fit(x, y)
-    fig = plt.figure(figsize=figaspect(1))
     ax = fig.gca()
+    ax.clear()
     ax.scatter(x[:, 0], x[:, 1], c=y, edgecolors='k')
     xlim = ax.get_xlim()
     ylim = ax.get_ylim()
@@ -52,4 +52,11 @@ def show(x, y):
                            readout_format='.3f',
                            description='$\gamma$ (gamma)',
                            continuous_update=False)
-    interact(plot, kernel=kernel, C=C, gamma=gamma, x=fixed(x), y=fixed(y))
+    fig = plt.figure(figsize=figaspect(1))
+    interact(plot,
+             kernel=kernel,
+             C=C,
+             gamma=gamma,
+             fig=fixed(fig),
+             x=fixed(x),
+             y=fixed(y))

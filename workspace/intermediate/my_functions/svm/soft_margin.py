@@ -28,7 +28,7 @@ def plot(C, x, y):
                     linewidths=0.8,
                     linestyles=['--', '-', '--'])
     fmt = {
-        c: '決定境界' if i is 1 else 'サポートベクター'
+        c: '決定境界' if i == 1 else 'サポートベクトル'
         for i, c in enumerate(cs.levels)
     }
     ax.clabel(cs, fontsize='large', fmt=fmt)

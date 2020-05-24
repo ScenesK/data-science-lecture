@@ -14,7 +14,7 @@ def plot(C, gamma, x, y):
     model = SVC(kernel='rbf', C=C, gamma=gamma, random_state=1234)
     model.fit(x, y)
 
-    plt.cla()
+    ax.clear()
 
     projection = model.decision_function(x)
     ax.scatter(x[:, 0], x[:, 1], projection, c=y, cmap='bwr')
