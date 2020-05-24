@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier, export
+from sklearn.tree import DecisionTreeClassifier, plot_tree, export_text
 from ipywidgets import interactive_output, IntSlider, Play, jslink
 import matplotlib.pyplot as plt
 from matplotlib.figure import figaspect
@@ -17,15 +17,15 @@ def plot(depth):
     model = DecisionTreeClassifier(max_depth=depth).fit(X, y)
     fig = plt.figure(figsize=figaspect(1.5 / 2) * depth)
     ax = fig.gca()
-    export.plot_tree(model,
-                     feature_names=X.columns,
-                     class_names=y.cat.categories,
-                     filled=True,
-                     impurity=False,
-                     ax=ax,
-                     fontsize='large')
+    plot_tree(model,
+              feature_names=X.columns,
+              class_names=y.cat.categories,
+              filled=True,
+              impurity=False,
+              ax=ax,
+              fontsize='large')
     plt.show()
-    print(export.export_text(model, feature_names=X.columns.tolist()))
+    print(export_text(model, feature_names=X.columns.tolist()))
 
 
 def show():

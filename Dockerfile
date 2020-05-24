@@ -6,7 +6,7 @@ ENV HOME /root
 RUN apt update && apt upgrade -y
 RUN apt install -y \
     language-pack-ja \
-    fonts-takao
+    fonts-noto
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV TZ Asia/Tokyo
 ARG DEBIAN_FRONTEND=noninteractive
@@ -84,8 +84,9 @@ RUN apt install -y cmake && \
 
 ARG MATPLOTLIBRC=${PYTHON_ROOT}/lib/python${PYTHON_VERSION_SHORT}/site-packages/matplotlib/mpl-data/matplotlibrc
 RUN pip install matplotlib==3.2.1 && \
-    sed -i -r -e 's/#(font.serif *: *)/\1TakaoPMincho, /' ${MATPLOTLIBRC} && \
-    sed -i -r -e 's/#(font.sans-serif *: *)/\1TakaoPGothic, /' ${MATPLOTLIBRC}
+    sed -i -r -e 's/#(font.family\s+:\s+).+/\1Noto Sans CJK JP/' ${MATPLOTLIBRC} && \
+    sed -i -r -e 's/#(font.serif\s+:\s+)/\1Noto Serif CJK JP, /' ${MATPLOTLIBRC} && \
+    sed -i -r -e 's/#(font.sans-serif\s+:\s+)/\1Noto Sans CJK JP, /' ${MATPLOTLIBRC}
 RUN pip install \
     seaborn==0.10.1 \
     bokeh==2.0.2 \
@@ -148,6 +149,7 @@ RUN pip install jupyterlab==2.1.2 && \
 ARG LAB_SETTINGS=$HOME/.jupyter/lab/user-settings
 RUN jupyter labextension install \
     @jupyterlab/toc \
+    @jupyter-widgets/jupyterlab-manager \
     @aquirdturtle/collapsible_headings \
     @lckr/jupyterlab_variableinspector \
     jupyterlab-plotly \
@@ -159,10 +161,6 @@ RUN pip install \
     xeus-python==0.7.1 \
     ptvsd==4.3.2 && \
     jupyter labextension install @jupyterlab/debugger
-ARG WIDGETS=${LAB_SETTINGS}/@jupyter-widgets/jupyterlab-manager
-RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager && \
-    mkdir -p ${WIDGETS} && \
-    echo '{"saveState":true}' > ${WIDGETS}/plugin.jupyterlab-settings
 RUN jupyter labextension install @bokeh/jupyter_bokeh && \
     pip install jupyter-bokeh==2.0.1
 RUN jupyter labextension install @krassowski/jupyterlab-lsp && \
@@ -177,6 +175,8 @@ ARG CUSTOM_CSS=${LAB_SETTINGS}/@wallneradam/custom_css
 RUN jupyter labextension install @wallneradam/custom_css && \
     mkdir -p ${CUSTOM_CSS}
 COPY my-light-jupyterlab-settings ${CUSTOM_CSS}/plugin.jupyterlab-settings
+RUN pip install ipympl==0.5.6 && \
+    jupyter labextension install jupyter-matplotlib@0.7.2
 RUN pip install jupyter-tensorboard==0.2.0 && \
     jupyter labextension install jupyterlab_tensorboard
 RUN pip install nteract-on-jupyter==2.1.3
