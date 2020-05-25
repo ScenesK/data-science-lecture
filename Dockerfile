@@ -95,6 +95,23 @@ RUN pip install \
     yellowbrick==1.1 \
     pylantern==0.1.6
 
+RUN pip install \
+    nltk==3.5 \
+    gensim==3.8.3 \
+    ginza==3.1.2 \
+    mecab-python3==0.996.5
+RUN apt install -y libboost-dev && \
+    wget http://lotus.kuee.kyoto-u.ac.jp/nl-resource/jumanpp/jumanpp-1.02.tar.xz && \
+    tar xvf jumanpp-1.02.tar.xz && \
+    rm jumanpp-1.02.tar.xz && \
+    cd jumanpp-1.02 && \
+    ./configure && \
+    make && \
+    make install && \
+    cd .. && \
+    rm -rf jumanpp-1.02 \
+    pip install pyknp==0.4.1
+
 # INSTALL JUPYTER NOTEBOOK
 ARG JUPYTER_SETTING=${HOME}/.jupyter
 RUN pip install notebook==6.0.3 \
