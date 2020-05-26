@@ -23,9 +23,9 @@ history = np.empty((max_iter + 1, n_clusters, 2))
 init = np.array([((centers[i][0] + centers[(i + 1) % n_clusters][0]) / 2,
                   (centers[i][1] + centers[(i + 1) % n_clusters][1]) / 2)
                  for i in range(n_clusters)])
-kwargs = dict(n_clusters=n_clusters, n_init=1, max_iter=1, n_jobs=-1)
+kwargs = dict(n_clusters=n_clusters, n_init=1, max_iter=1)
 for i in range(max_iter + 1):
-    if i is 0:
+    if i == 0:
         model = KMeans(init=init, **kwargs)
     else:
         model = KMeans(init=history[i - 1], **kwargs)
@@ -60,10 +60,10 @@ def plot(i):
                    alpha=alpha,
                    marker='x')
 
-    if scene is 0:
+    if scene == 0:
         _plot_sample()
         _plot_center(cluster_centers)
-    elif scene is 1:
+    elif scene == 1:
         _plot_sample()
         _plot_center(cluster_centers)
         lim = _get_lim()
@@ -76,7 +76,7 @@ def plot(i):
                    marker='.',
                    alpha=0.05,
                    edgecolors='none')
-    elif scene is 2:
+    elif scene == 2:
         _plot_sample(color=colors[model.predict(X)], alpha=0.7)
         _plot_center(cluster_centers, alpha=0.4)
     else:
