@@ -82,11 +82,14 @@ RUN apt install -y libgraphviz-dev && \
 RUN apt install -y cmake && \
     pip install lightgbm==2.3.1
 
-ARG MATPLOTLIBRC=${PYTHON_ROOT}/lib/python${PYTHON_VERSION_SHORT}/site-packages/matplotlib/mpl-data/matplotlibrc
+ARG ORIGINAL=${PYTHON_ROOT}/lib/python${PYTHON_VERSION_SHORT}/site-packages/matplotlib/mpl-data/matplotlibrc
+ARG CONFIG_DIR=${HOME}/.config/matplotlib
+ARG CONFIG_FILE=${CONFIG_DIR}/matplotlibrc
 RUN pip install matplotlib==3.2.1 && \
-    sed -i -r -e 's/#(font.family\s+:\s+).+/\1Noto Sans CJK JP/' ${MATPLOTLIBRC} && \
-    sed -i -r -e 's/#(font.serif\s+:\s+)/\1Noto Serif CJK JP, /' ${MATPLOTLIBRC} && \
-    sed -i -r -e 's/#(font.sans-serif\s+:\s+)/\1Noto Sans CJK JP, /' ${MATPLOTLIBRC}
+    mkdir -p ${CONFIG_DIR} && \
+    sed -r -e 's/#(font.family\s+:\s+).+/\1Noto Sans CJK JP/' ${ORIGINAL} > ${CONFIG_FILE} && \
+    sed -i -r -e 's/#(font.serif\s+:\s+)/\1Noto Serif CJK JP, /' ${CONFIG_FILE} && \
+    sed -i -r -e 's/#(font.sans-serif\s+:\s+)/\1Noto Sans CJK JP, /' ${CONFIG_FILE}
 RUN pip install \
     seaborn==0.10.1 \
     bokeh==2.0.2 \
