@@ -72,7 +72,8 @@ RUN pip install --upgrade \
     pmdarima==1.6.0 \
     overpy==0.4 \
     OSMPythonTools==0.2.8 \
-    pyproj==2.6.1.post1
+    pyproj==2.6.1.post1 \
+    xgboost==1.1.0
 RUN apt install -y graphviz && \
     pip install \
     pydot==1.4.1 \
