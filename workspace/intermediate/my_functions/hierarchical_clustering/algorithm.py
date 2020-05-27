@@ -71,14 +71,14 @@ def plot(i):
                        color=colors[centroids_unique.index(tuple(centroid))],
                        alpha=0.2)
 
-    if scene is 0:
+    if scene == 0:
         plot_parents(ax, centroids)
         plot_children(ax, centroids)
     else:
         new_centroids = history[step + 1]
         nearest_points = np.array(
             [c for c in centroids if c not in new_centroids])
-        if scene is 1:
+        if scene == 1:
             plot_parents(ax, centroids)
             plot_children(ax, centroids)
             plot_parents(ax, nearest_points)
