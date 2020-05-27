@@ -1,7 +1,7 @@
 from collections import defaultdict
 import numpy as np
 from sklearn.datasets import make_blobs
-from sklearn.cluster.mean_shift_ import estimate_bandwidth
+from sklearn.cluster._mean_shift import estimate_bandwidth
 from ipywidgets import interactive_output, IntSlider, Play, jslink
 import matplotlib.pyplot as plt
 from matplotlib.figure import figaspect
@@ -60,9 +60,9 @@ def plot(i):
     def _plot_centers(x, y, alpha=1):
         ax.scatter(x, y, color='red', alpha=alpha, marker='x')
 
-    if i is 0:
+    if i == 0:
         pass
-    elif i is 1:
+    elif i == 1:
         ax.vlines(xbounds, ylim[0], ylim[1], alpha=0.2)
         ax.hlines(ybounds, xlim[0], xlim[1], alpha=0.2)
         _plot_centers(bin_seeds[:, 0], bin_seeds[:, 1], alpha=0.2)
@@ -72,7 +72,6 @@ def plot(i):
         scene = j % n_scenes
         while j >= 0:
             order += 1
-            steps_left = j // n_scenes
             step = j // n_scenes
             j -= (len(history[order]) - 1) * n_scenes
 
@@ -86,7 +85,7 @@ def plot(i):
         movement = history[order]
         center = movement[step]
         center_x, center_y = center[0], center[1]
-        if scene is 0:
+        if scene == 0:
             _plot_centers(center_x, center_y)
             ax.add_patch(
                 Circle((center_x, center_y),
@@ -97,11 +96,11 @@ def plot(i):
             if scene < 3:
                 _plot_centers(center_x, center_y, alpha=0.2)
             neighbors = _get_neighbors((center_x, center_y))
-            if scene is 1:
+            if scene == 1:
                 ax.scatter(neighbors[:, 0], neighbors[:, 1], color='red')
             else:
                 new_x, new_y = movement[step + 1]
-                if scene is 2:
+                if scene == 2:
                     ax.scatter(neighbors[:, 0],
                                neighbors[:, 1],
                                color='red',
