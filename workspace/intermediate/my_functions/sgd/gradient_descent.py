@@ -1,11 +1,11 @@
 import numpy as np
 from sklearn.datasets import make_regression
-from tensorflow.python.keras import backend as K
-from tensorflow.python.keras.initializers import Constant
-from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.layers import Dense
-from tensorflow.python.keras.optimizers import SGD
-from tensorflow.python.keras.callbacks import Callback
+from tensorflow.keras import backend as K
+from tensorflow.keras.initializers import Constant
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.callbacks import Callback
 
 
 def get_data(n, dim):
